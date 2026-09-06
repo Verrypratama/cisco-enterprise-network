@@ -14,28 +14,89 @@ Proyek ini merupakan simulasi infrastruktur jaringan LAN untuk gedung bertingkat
 
 ## Skema Pengalamatan IP dan Subnetting
 
-| Nama Subnet / Segmen | Network ID | Subnet Mask | CIDR | Rentang IP yang Bisa Dipakai | Default Gateway |
-| :--- | :--- | :--- | :---: | :--- | :--- |
-| Subnet Lantai 1 | `192.168.5.96` | `255.255.255.224` | `/27` | `192.168.5.97 – 192.168.5.126` | `192.168.5.97` |
-| Subnet Lantai 2 | `192.168.5.64` | `255.255.255.224` | `/27` | `192.168.5.65 – 192.168.5.94` | `192.168.5.65` |
-| Subnet Lantai 3 | `192.168.5.0` | `255.255.255.240` | `/28` | `192.168.5.1 – 192.168.5.14` | `192.168.5.1` |
-| Subnet Server | `192.168.5.128` | `255.255.255.252` | `/30` | `192.168.5.129 – 192.168.5.130` | `192.168.5.129` |
-| P2P Ruter Lantai 1 – Utama | `192.168.5.132` | `255.255.255.252` | `/30` | `192.168.5.133 – 192.168.5.134` | - |
-| P2P Ruter Lantai 2 – Utama | `192.168.5.136` | `255.255.255.252` | `/30` | `192.168.5.137 – 192.168.5.138` | - |
-| P2P Ruter Lantai 3 – Utama | `192.168.5.140` | `255.255.255.252` | `/30` | `192.168.5.141 – 192.168.5.142` | - |
+* Subnet Lantai 1
+  * Network ID: 192.168.5.96
+  * Subnet Mask: 255.255.255.224 (/27)
+  * Rentang IP usable: 192.168.5.97 – 192.168.5.126
+  * Default Gateway: 192.168.5.97
+
+* Subnet Lantai 2
+  * Network ID: 192.168.5.64
+  * Subnet Mask: 255.255.255.224 (/27)
+  * Rentang IP usable: 192.168.5.65 – 192.168.5.94
+  * Default Gateway: 192.168.5.65
+
+* Subnet Lantai 3
+  * Network ID: 192.168.5.0
+  * Subnet Mask: 255.255.255.240 (/28)
+  * Rentang IP usable: 192.168.5.1 – 192.168.5.14
+  * Default Gateway: 192.168.5.1
+
+* Subnet Server
+  * Network ID: 192.168.5.128
+  * Subnet Mask: 255.255.255.252 (/30)
+  * Rentang IP usable: 192.168.5.129 – 192.168.5.130
+  * Default Gateway: 192.168.5.129
+
+* P2P Ruter Lantai 1 – Utama
+  * Network ID: 192.168.5.132
+  * Subnet Mask: 255.255.255.252 (/30)
+  * Rentang IP usable: 192.168.5.133 – 192.168.5.134
+  * Default Gateway: Tidak ada
+
+* P2P Ruter Lantai 2 – Utama
+  * Network ID: 192.168.5.136
+  * Subnet Mask: 255.255.255.252 (/30)
+  * Rentang IP usable: 192.168.5.137 – 192.168.5.138
+  * Default Gateway: Tidak ada
+
+* P2P Ruter Lantai 3 – Utama
+  * Network ID: 192.168.5.140
+  * Subnet Mask: 255.255.255.252 (/30)
+  * Rentang IP usable: 192.168.5.141 – 192.168.5.142
+  * Default Gateway: Tidak ada
 
 ## Penamaan Perangkat Standar
 
-| Nama Bawaan Packet Tracer | Nama Standar Perangkat | Tipe Perangkat | Peran / Lokasi Perangkat |
-| :--- | :--- | :--- | :--- |
-| Router3 | `R-CORE-01` | Cisco Router | Ruter Pusat / Core Router |
-| Router0 | `R-LANTAI1-01` | Cisco Router | Ruter Distribusi Lantai 1 |
-| Router2 | `R-LANTAI2-01` | Cisco Router | Ruter Distribusi Lantai 2 |
-| Router1 | `R-LANTAI3-01` | Cisco Router | Ruter Distribusi Lantai 3 |
-| Switch0 | `SW-LANTAI1-01` | Cisco Switch | Switch Akses Lantai 1 |
-| Switch1 | `SW-LANTAI2-01` | Cisco Switch | Switch Akses Lantai 2 |
-| Switch2 | `SW-LANTAI3-01` | Cisco Switch | Switch Akses Lantai 3 |
-| Server0 | `SRV-MAIN-01` | Dedicated Server | Server Data & Web Utama |
+* Router3 (Packet Tracer)
+  * Nama Standar: R-CORE-01
+  * Tipe: Cisco Router
+  * Peran: Ruter Pusat / Core Router
+
+* Router0 (Packet Tracer)
+  * Nama Standar: R-LANTAI1-01
+  * Tipe: Cisco Router
+  * Peran: Ruter Distribusi Lantai 1
+
+* Router2 (Packet Tracer)
+  * Nama Standar: R-LANTAI2-01
+  * Tipe: Cisco Router
+  * Peran: Ruter Distribusi Lantai 2
+
+* Router1 (Packet Tracer)
+  * Nama Standar: R-LANTAI3-01
+  * Tipe: Cisco Router
+  * Peran: Ruter Distribusi Lantai 3
+
+* Switch0 (Packet Tracer)
+  * Nama Standar: SW-LANTAI1-01
+  * Tipe: Cisco Switch
+  * Peran: Switch Akses Lantai 1
+
+* Switch1 (Packet Tracer)
+  * Nama Standar: SW-LANTAI2-01
+  * Tipe: Cisco Switch
+  * Peran: Switch Akses Lantai 2
+
+* Switch2 (Packet Tracer)
+  * Nama Standar: SW-LANTAI3-01
+  * Tipe: Cisco Switch
+  * Peran: Switch Akses Lantai 3
+
+* Server0 (Packet Tracer)
+  * Nama Standar: SRV-MAIN-01
+  * Tipe: Dedicated Server
+  * Peran: Server Data & Web Utama
 
 ## Langkah-Langkah Pengerjaan
 
